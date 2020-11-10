@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1AE92817-4BD4-437B-868A-6D7C2478A578}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>iKEP EDI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\nasc1\data\iKEP\Deploiement\EDIv2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>iKEP EDI</ProductName>
+    <PublisherName>iKEP</PublisherName>
+    <SuiteName>iKEP EDI</SuiteName>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.1.0.7</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>iKEP EDI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>iKEP EDI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1A3EC111DC7C84DA0942D6DF26E9C14F63DC1A9D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>EDIv1b-fond.fw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test2|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\test2\</OutputPath>
+    <DocumentationFile>iKEP EDI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.IntegrationServices, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.SqlServer.Management.IntegrationServices\11.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.Management.IntegrationServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.IntegrationServicesEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.SqlServer.Management.IntegrationServicesEnum\11.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.Management.IntegrationServicesEnum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F_Afferm\F_Afferme.Designer.vb">
+      <DependentUpon>F_Afferme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Afferm\F_Afferme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="F_Export\F_Export.Designer.vb">
+      <DependentUpon>F_Export.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Export\F_Export.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Import\F_ImportArchive.Designer.vb">
+      <DependentUpon>F_ImportArchive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Import\F_ImportArchive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Import\F_ImportControlIntegration.Designer.vb">
+      <DependentUpon>F_ImportControlIntegration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Import\F_ImportControlIntegration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Import\F_ImportEncours.Designer.vb">
+      <DependentUpon>F_ImportEncours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Import\F_ImportEncours.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Import\F_ImportListe.Designer.vb">
+      <DependentUpon>F_ImportListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Import\F_ImportListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Import\F_LigneVerouille.Designer.vb">
+      <DependentUpon>F_LigneVerouille.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Import\F_LigneVerouille.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_TiersListe.designer.vb">
+      <DependentUpon>F_TiersListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_TiersListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_TiersTraitListe.Designer.vb">
+      <DependentUpon>F_TiersTraitListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_TiersTraitListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_TiersTrait.Designer.vb">
+      <DependentUpon>F_TiersTrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_TiersTrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global\Common.vb" />
+    <Compile Include="Global\F_Doc.Designer.vb">
+      <DependentUpon>F_Doc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Global\F_Doc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global\F_SSISAttente.Designer.vb">
+      <DependentUpon>F_SSISAttente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Global\F_SSISAttente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global\F_Notif.Designer.vb">
+      <DependentUpon>F_Notif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Global\F_Notif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Import\F_ImportCdeVente.designer.vb">
+      <DependentUpon>F_ImportCdeVente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Import\F_ImportCdeVente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_Config.Designer.vb">
+      <DependentUpon>F_Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_ConfigListe.Designer.vb">
+      <DependentUpon>F_ConfigListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_ConfigListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_UsersListe.Designer.vb">
+      <DependentUpon>F_UsersListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_UsersListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_Users.Designer.vb">
+      <DependentUpon>F_Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_Param.Designer.vb">
+      <DependentUpon>F_Param.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_Param.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Param\F_Tiers.Designer.vb">
+      <DependentUpon>F_Tiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Param\F_Tiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Main.Designer.vb">
+      <DependentUpon>F_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Global\F_Accueil.Designer.vb">
+      <DependentUpon>F_Accueil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Global\F_Accueil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Settings1.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F_Afferm\F_Afferme.resx">
+      <DependentUpon>F_Afferme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Export\F_Export.resx">
+      <DependentUpon>F_Export.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Import\F_ImportArchive.resx">
+      <DependentUpon>F_ImportArchive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Import\F_ImportControlIntegration.resx">
+      <DependentUpon>F_ImportControlIntegration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Import\F_ImportEncours.resx">
+      <DependentUpon>F_ImportEncours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Import\F_ImportListe.resx">
+      <DependentUpon>F_ImportListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Import\F_LigneVerouille.resx">
+      <DependentUpon>F_LigneVerouille.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_TiersListe.resx">
+      <DependentUpon>F_TiersListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_TiersTraitListe.resx">
+      <DependentUpon>F_TiersTraitListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_TiersTrait.resx">
+      <DependentUpon>F_TiersTrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global\F_Doc.resx">
+      <DependentUpon>F_Doc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global\F_SSISAttente.resx">
+      <DependentUpon>F_SSISAttente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global\F_Notif.resx">
+      <DependentUpon>F_Notif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Import\F_ImportCdeVente.resx">
+      <DependentUpon>F_ImportCdeVente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="F_Param\F_Config.resx">
+      <DependentUpon>F_Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_ConfigListe.resx">
+      <DependentUpon>F_ConfigListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_UsersListe.resx">
+      <DependentUpon>F_UsersListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_Users.resx">
+      <DependentUpon>F_Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_Param.resx">
+      <DependentUpon>F_Param.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Param\F_Tiers.resx">
+      <DependentUpon>F_Tiers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Main.resx">
+      <DependentUpon>F_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global\F_Accueil.resx">
+      <DependentUpon>F_Accueil.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iKEP-logo.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import2.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Param.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utilisateur.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiers.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.IntegrationServices.Common.ObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SqlParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDIv1b-fond.fw.ico" />
+    <Content Include="EDIv1c.fw.ico" />
+    <None Include="Resources\LogoAccueil2.fw4.png" />
+    <None Include="Resources\LogoAccueil.fw2.png" />
+    <None Include="Resources\LogoAccueil2.fw3.png" />
+    <None Include="Resources\LogoAccueil2.fw2.png" />
+    <None Include="Resources\LogoAccueil2.fw1.png" />
+    <None Include="Resources\LogoAccueil2.fw.png" />
+    <None Include="Resources\LogoAccueil.fw1.png" />
+    <None Include="Resources\LogoAccueil.fw.png" />
+    <None Include="Resources\EDIv2a.fw.png" />
+    <None Include="Resources\bimport.fw.png" />
+    <None Include="Resources\bprocess.fw.png" />
+    <None Include="Resources\bAfferme.fw.png" />
+    <None Include="Resources\filtre.fw.png" />
+    <None Include="Resources\bDossiert.fw.png" />
+    <None Include="Resources\btransfert.fw.png" />
+    <None Include="Resources\load21.gif" />
+    <None Include="Resources\breprocess.fw.png" />
+    <None Include="Resources\breprocess.fw1.png" />
+    <None Include="Resources\bControl.fw.png" />
+    <Content Include="Resources\load3b.fw.ico" />
+    <Content Include="Resources\import3.ico" />
+    <None Include="Resources\load3e.gif" />
+    <None Include="Resources\load3b.gif" />
+    <None Include="Resources\load3.gif" />
+    <None Include="Resources\import4.fw1.png" />
+    <None Include="Resources\import4.fw.png" />
+    <None Include="Resources\load2.gif" />
+    <None Include="Resources\Extract.fw.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

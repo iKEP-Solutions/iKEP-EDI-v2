@@ -1,0 +1,57 @@
+body {
+	background-color: #FFFFFF;
+  	font-family: Century Gothic;
+  font-size: 16px;
+  
+}
+
+h1 {
+  color:  #B23132;
+  font-size: 18px;
+  font-weight:bold;
+}
+
+h2 {
+  color: #606060;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 1px;
+}
+
+.MenuBar {
+		width:100%;
+		height:170px;
+		border:0px;
+		padding:0px;
+}
+
+.tablo td {
+  padding: 0px;
+  border:none;
+	 }
+
+.Menu td {
+	background:#B23132;
+	color:#FFF;
+	padding: 0px 5px 5px 0px;
+	 cellspacing="0"; 
+	}
+
+.Menu td a {
+	color:#FFF;	
+		 cellspacing="0"; 
+}
+
+
+.filActu {
+	color: #606060;
+	font-size: 12px;
+	padding-bottom:10px;
+}
+
+.filActu a {
+	color: #C00000;
+}
+
+
+  

@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SQLConEDI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Provider=SQLOLEDB.1;Persist Security Info=True;Password=Bgt56yhN;User ID=cssql2017;Server=PMSSQLC1\APP;Database=EDI;Persist Security Info=True;</Value>
+    </Setting>
+    <Setting Name="SQLConSilog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Provider=SQLOLEDB.1;Persist Security Info=True;Password=SilmoMacro;User ID=ZCBN;</Value>
+    </Setting>
+    <Setting Name="SQLDossierETL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EDI</Value>
+    </Setting>
+    <Setting Name="ModeDebug" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HorizonContratDeb" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="HorizonContratFin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="HorizonAfferme" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="CheminDoc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\nasc1\Data\ERP\BI\EDI\Doc\</Value>
+    </Setting>
+    <Setting Name="DateModifFin" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2050-01-01</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

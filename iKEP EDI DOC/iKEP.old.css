@@ -1,0 +1,43 @@
+body {
+	background-color: #FFFFFF;
+  	font-family: Century Gothic;
+  font-size: 16px;
+  padding-right: 0px;
+  
+}
+
+h1 {
+  color: white;
+  background-color : #B23132;
+  font-size: 18px;
+  font-weight: normal;
+  padding:0px 10px 0 5px;
+}
+
+h2 {
+  color: #606060;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 1px;
+}
+
+
+.tablo td {
+  height: 30px;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  
+}
+
+.filActu {
+	color: #606060;
+	font-size: 12px;
+	padding-bottom:10px;
+}
+
+.filActu a {
+	color: #C00000;
+}
+
+
+  
